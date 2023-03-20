@@ -1,0 +1,217 @@
+
+@import url('https://css.gg/css?=|menu-grid-o|trash|close-o|edit-markup');
+
+
+.notes-container .notes
+{
+    background-color: white;    
+    margin: 1.5rem 1.5rem;
+    border: 0.125rem solid;
+    border-color: #002f6c;
+    border-radius: 5px;
+    min-height: 5rem;
+    transition:250ms;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.gg-edit-markup 
+{
+    color: #141414;
+}
+
+
+.notes-container .notes:hover 
+{
+    transform: scale(1.01);
+    box-shadow: 1px 3px 28px -5px rgba(66, 68, 90, 1);
+    border-color: #002f6c;
+}
+
+.notes-container .notes h2
+{
+    font-size: 130%;
+}
+
+.notes-container .notes p
+{
+    font-size: 80%;
+}
+
+.notes-description   
+
+{
+    margin-left: 1rem;
+    margin-right: auto;
+    overflow-wrap: break-word;
+}
+
+
+.notes-buttons 
+{
+    display: flex;
+    gap: 20px;
+    right: 50px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+
+}
+
+.gg-trash
+{
+    cursor: pointer;
+    margin-top: 6px;
+    height: 13px;
+    color: #141414;
+} 
+
+.gg-trash:hover 
+{
+    color: darkred;
+    cursor: pointer;
+}
+
+.gg-close-o 
+{
+    cursor: pointer;
+    display: none;
+}
+
+.notes-container .notes:hover .gg-close-o
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10px,-10px);
+  background-color: whitesmoke;
+  color: #141414;
+}
+
+
+.gray-overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 50;
+
+}
+
+@media (min-width: 1000px) 
+{
+    .notes-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        max-width: 90vw;
+        margin: 40px auto;
+      
+    }
+
+    .notes-container .notes
+    {
+        display: flex;
+        align-items: flex-start;
+        background: #fff;
+        color: #141414;
+        padding: 20px;
+        width: 15rem;
+        height: 6rem;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .notes-container .notes:hover 
+    {
+        transform: translateY(-10px);
+    }
+
+    .notes-description  
+    {
+        width: 100%;
+        max-width: 190px;
+    }
+        
+    .notes-container .notes h2 
+    {
+        margin-bottom: 6px;
+    }
+    
+    .notes-container .notes p 
+    {
+        font-size: 0.9em;
+    }
+    .notes-container .notes div 
+    {
+        font-size: 0.8em;
+        margin:  0;
+        line-height: 1.5em;
+    }
+
+    
+    .gg-edit-markup 
+    {
+        color: #141414;
+        margin-top: 4.5rem;
+        margin-left: 2rem;
+    }
+    
+}
+
+
+@media (min-width: 1350px) 
+{
+    .notes-container
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;  
+    }
+
+    .notes-description  
+    {
+        width: 100%;
+    }
+}   
+
+
+@media (min-width: 1750px) 
+{
+    .notes-container .notes {
+        width: 18rem;
+    }
+
+    .notes-description  
+    {
+        width: 80%;
+        max-width: none;
+    }
+}   
+
+
+
+@media (max-width: 650px) 
+{
+    .notes-description   
+    {
+        font-size: 80%;
+    }
+}   
+
+
+@media (max-width: 500px) 
+{
+    .notes-description   
+    {
+        font-size: 70%;
+    }
+}   

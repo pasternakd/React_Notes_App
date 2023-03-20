@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #01579b;
+    border-bottom: 10px solid;
+    border-color: #002f6c;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo {
+    color: white;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.navbar a:last-child {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 4em; 
+    padding: 0.8em;
+    border: 0.1em solid #fff;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) 
+{
+    .navbar .logo {
+      font-size: 80%;
+    }
+    
+    .navbar a:last-child {
+       font-size: 75%;
+    }
+
+
+}   

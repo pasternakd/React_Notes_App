@@ -1,0 +1,57 @@
+
+.delete-pop-container {
+    width: 15rem;
+    height: 10rem;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border: 0.15rem solid;
+    border-color: #002f6c;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 0.6rem;
+    position: fixed;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.delete-pop-container h1 {
+     text-align: center;
+     margin-top: 1rem;
+    
+}
+
+.delete-pop-buttons .confirm button {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    color: white;
+    background-color: #002f6c;
+    border: 0.0rem solid;
+    border-radius: 5px;
+    padding: 0.6rem;
+    width: 50px;
+    cursor: pointer;
+}
+
+.delete-pop-buttons .decline button {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    color: white;
+    background-color: #002f6c;
+    border: 0.0rem solid;
+    border-radius: 5px;
+    padding: 0.6rem;
+    width: 50px;
+    cursor: pointer;
+}
+
+.delete-pop-container-message {
+    background-color: #fff;
+    padding: 4px 8px 8px 8px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 0.5em;
+}
+
+

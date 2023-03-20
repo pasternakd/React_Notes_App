@@ -1,0 +1,55 @@
+.create {
+    color: #555;
+    max-width: 480px;
+    margin: 60px auto;
+  }
+  .create label span {
+    display: block;
+    margin: 30px 0 10px;
+  }
+  .create p {
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+  .create button {
+    display: block;
+    width: 100px;
+    height: 43px;
+    font-size: 0.9em;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #002f6c;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px auto;
+  }
+
+  .create textarea {
+    min-height: 15rem;
+    max-height: 25rem;
+    max-width: 480px;
+    min-width: 480px;
+  }
+
+  @media (max-width: 500px) {
+    .create {
+      margin: 35px auto;
+      max-width: 300px;
+      font-size: 80%;
+    }
+
+    .create textarea 
+    {
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 7rem;
+      max-height: 7rem;
+      font-size: 80%;
+    }
+
+    .create button {
+      margin: 40px auto;
+    }
+  }
